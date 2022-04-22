@@ -4,7 +4,7 @@
 //     descriptor: TypedPropertyDescriptor<T>
 //   ) => TypedPropertyDescriptor<T> | void;
 
-class A {
+class AFOO {
   @bar
   foo(n: number) {
     console.log("foo", n);
@@ -24,6 +24,6 @@ function bar(target: object, propertyKey: string, descriptor: any) {
   };
 }
 
-const a = new A();
+const a = new AFOO();
 a.foo(1);
 

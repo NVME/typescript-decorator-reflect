@@ -1,5 +1,4 @@
 import { Reflect } from "https://deno.land/x/deno_reflect@v0.1.13/mod.ts";
-import { Foo } from "./foo.ts";
 import {Repository} from "../user/userRepository.ts";
 
 
@@ -11,7 +10,7 @@ function decorator<T>(_: Constructor<T>): void {}
 
 @decorator
 class Example {
-  constructor(a: string, b: Repository, c: Foo) {}
+  constructor(a: string, b: Repository) {}
 }
 
 
