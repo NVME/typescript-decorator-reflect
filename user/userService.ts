@@ -21,7 +21,7 @@ export class Service implements UserService {
   }
 }
 
-Container.register("UserRepository", new Repository())
+//Container.register("UserRepository", new Repository())
 
 const userService = new Service()
 // userService has access to an instance of UserRepository without having it provided in the constructor
